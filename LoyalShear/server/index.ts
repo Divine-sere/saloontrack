@@ -68,3 +68,7 @@ app.use((req, res, next) => {
     log(`serving on port ${port}`);
   });
 })();
+app.get('/', (req, res) => {
+  res.send('🚀 Backend API is running!');
+});
+
